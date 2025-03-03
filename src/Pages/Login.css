@@ -1,0 +1,75 @@
+/* login.css */
+.login-body {
+  background: linear-gradient(to right, #ffff 50%, #7B235B 50%);
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Ensures it covers the full viewport height */
+  width: 100%;   /* Ensures it covers the full viewport width */
+  align-items: center;
+  justify-content: center;
+}
+
+  .logo{
+    position: absolute; /*position it relative to the nearest positioned ancestor */
+    top: 10px;          /* Distance from the top of the page/container */
+    left: 10px;        /* Distance from the right side of the page/container */
+    width: 12%;        /* Adjust width for a small logo */
+    height: auto; }
+  
+  .login-container {
+   
+    width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#852A64;
+    font-weight:bolder ;
+  }
+  .login-container h3{
+    color: #131112;
+  }
+  
+  input {
+    
+    background-color: #f9f9f9; 
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(210, 203, 208);
+    border-radius: 4px;
+  }
+  input:focus {
+    border-color:#7B235B; /* Change the border color when input is focused */
+    outline: none; /* Remove default blue outline */
+    
+  }
+  #fp{
+    color: #7B235B;
+  }
+  
+ button {
+    width: 100px;
+    padding: 10px;
+    background-color:#852A64;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 13px;
+  } 
+  
+  button:hover {
+    background-color: #7B235B;
+  }

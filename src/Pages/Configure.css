@@ -1,0 +1,92 @@
+/* Parent container for the form */
+.configure-container{
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 0 10px; /* Combine padding-left and padding-right */
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    margin-top: 30px;
+    margin-left: 100px;
+    
+}
+.configure {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 30px;
+    }
+
+
+
+.main{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: rgb(241, 241, 238);
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align content to the start */
+    gap: 15px; /* Add spacing between elements */
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 220px;
+    max-width: 700px; /* Optional: Limit maximum width for better layout */
+    
+}
+
+/* Label and input styling */
+.form-row {
+    display: flex;
+    align-items: center;
+    /* Ensure each label and input is stacked */
+    width: 70%;
+    gap:20px;
+    padding:10px
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 90px;
+}
+
+.form-select {
+    width: 100%; /* Take full width */
+    max-width: 100%; /* Ensure the select fits the container */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Checkbox styling */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-left: 100px; /* Add space between checkbox and label */
+}
+
+.form-checkbox span {
+    font-size: 16px;
+    color: black;
+}
+
+/* Save button styling */
+button {
+     /* Align button to the left */
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #6a1b4d;
+}
+
+button:active {
+    background-color: #500e3a;
+}

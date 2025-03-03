@@ -1,0 +1,94 @@
+/* Layout */
+.all-meter {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0; /* Adjusted to remove padding around the main container */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.meter {
+  margin-left: 250px; /* Offset to the right by the width of the sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 60px; /* If you have a fixed navbar, give space at the top */
+}
+
+
+
+.meters-data {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1; 
+}
+.pagination {
+  margin-top: 20px;
+  text-align: end;
+}
+
+.page-button, .prev-next-button {
+  margin: 0 5px; 
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #bfbebe;
+  cursor: pointer;
+}
+
+.page-button.active {
+  font-weight: bold;
+  background-color: #7b235b;
+  color: white;
+}
+
+.page-button:hover, .prev-next-button:hover {
+  background-color: #7b235b;
+}
+
+.prev-next-button.disabled {
+  background-color: #f1f1f1;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+
+
+.meter-data {
+  background-color: rgb(238, 238, 238);
+  width:300px; /* Ensures both boxes take equal width */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px;
+}
+
+.row-container {
+display: flex;
+justify-content: space-between; /* Add space between items */
+align-items: center; /* Align items vertically in the center */
+gap: 20px; /* Optional: Add gap between items */
+}

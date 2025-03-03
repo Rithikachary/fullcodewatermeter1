@@ -1,0 +1,145 @@
+/* Sidebar Container */
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  
+  
+  .sidebar {
+    position: fixed; /* Fix the sidebar to the left of the screen */
+    top: 0; /* Align with the top of the screen */
+    left: 0; /* Start from the left edge of the screen */
+    width: 210px; /* Define width of the sidebar */
+    height: 100vh; /* Make the sidebar take full height of the viewport */
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 12px rgb(139, 135, 135); /* Box shadow effect */
+    scroll-behavior: smooth;
+    overflow: scroll;
+    z-index: 100; /* Make sure sidebar is above the content but below navbar */
+   
+  }
+  
+  /* Customize the scrollbar */
+  .sidebar::-webkit-scrollbar {
+    width: 4px; /* Reduce scrollbar width */
+    height: 4px; /* Reduce scrollbar height (horizontal scrollbars if any) */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 222, 222); /* Set thumb color */
+    border-radius: 4px; /* Rounded scrollbar edges */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background-color: white; /* Set track background */
+    border-radius: 4px;
+  }
+  
+    
+    /* Logo Section */
+    .navbar-logo {
+      margin-bottom: 5px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-img {
+      width: 140px;
+      height: auto;
+      margin-top: -10px;
+    }
+    
+    /* Heading Section */
+    .heading {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #7b235b;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+    
+    /* Menu List */
+    .menu-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .menu-item {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    
+    /* Menu Title */
+    .menu-title {
+      display: flex;
+      align-items: center; /* Align icon, text, and arrow vertically */
+      justify-content: space-between; /* Distribute space evenly */
+      color: #7b235b;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    
+    .menu-icon-text {
+      display: flex;
+      align-items: center; /* Align icon and text together */
+    }
+    
+    .menu-icon {
+      margin-right: 8px; /* Add spacing between the icon and text */
+    }
+    
+    .menu-text {
+      margin-left: 10px; /* Adjust text alignment if necessary */
+      font-weight:bolder;
+    }
+    
+    /* Arrow Position */
+    .arrow {
+      margin-left: auto; /* Push arrow to the far right */
+      font-size: 16px;
+    }
+    
+    /* Sub Menu */
+    .sub-menu {
+      list-style-type: disc;
+      padding-left: 30px;
+      margin-top: 10px;
+    }
+    
+    .sub-menu-item {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .sub-menu-item:hover,
+    .sub-menu-item.active,
+    .sub-menu-item:focus {
+      color: #7b235b;
+      font-weight: bold;
+   /*  text-transform: uppercase;*/
+    /*  background-color: rgba(123, 35, 91, 0.1); /* Highlight active/hover items */ 
+      transition: color 0.3s, background-color 0.3s;
+    }
+    
+    /* Dashboard Section */
+    .navbar-logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .heading:hover {
+      color: #5a1744;
+      text-decoration: underline;
+    }
+    

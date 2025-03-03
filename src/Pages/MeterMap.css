@@ -1,0 +1,302 @@
+.meter-mapping{
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0 10px; /* Combine padding-left and padding-right */
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  margin-top: 30px;
+  margin-left: 100px;
+  
+}
+.meter-map{
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 130px;
+  margin-top: 10px;
+  }
+
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b004b;
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Space between sections */
+    margin-top: 10px;
+  }
+  
+  /* Individual sections */
+  .hierarchy-section,
+  .meter-section,
+  .address-section,
+  .customer-details-section {
+    width: 70%;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card shadow */
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #4b004b;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-left: 80px;
+    align-items: center; /* Align label and field vertically */
+    margin-bottom: 15px;
+    gap: 45px; /* Space between label and input */
+    width: 600px;
+  }
+  #addtype{
+    display: flex;
+    width: 53%; 
+    align-items: center; /* Align label and field vertically */
+    margin-bottom: 15px;
+    
+
+  }
+  
+  label {
+    font-size: 14px;
+    color: #4b004b;
+    font-weight: bold;
+    min-width: 70px; /* Fixed width for labels */
+    text-align: left; /* Align labels to the right */
+  }
+  
+  .meter-dropdown{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 40%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inset shadow */
+    justify-content: right;
+    align-items: center;
+    
+  }
+
+
+  .meter-dropdown-details{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 1200px;
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); Slight inset shadow */
+    justify-content: right;
+    align-items: center;
+    
+  }
+
+  .text-input{
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inset shadow */
+    justify-content: right;
+    align-items: center;
+
+  }
+
+
+ 
+
+
+
+.textarea-input {
+  font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 65%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inset shadow */
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .textarea-input {
+    resize: none;
+    height: 100px;
+
+   
+  }
+  
+  .button-group {
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 8px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .save-button {
+    background-color: #4b004b;
+    color: #ffffff;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+    color: black;
+
+  }
+.cancel-button:hover {
+    
+    color: white;
+
+  }
+
+
+
+
+  .form-group label {
+    width: 180px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+
+/* Dialog Preview */
+
+
+
+.box{
+
+  background-color: #ffffff;
+  border: 1px solid rgb(138, 136, 136);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+
+}
+
+
+.MuiDialog-paper {
+  padding: 20px;
+  width: 40%;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+.address-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.address-section > div {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.text-sm {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bg-purple-100 {
+  background-color: #f3e8ff;
+}
+
+.text-purple-600 {
+  color: #9333ea;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+
+
+
+.custom-form-control{
+  display: flex;
+  margin-top: 5px;
+  gap: 30px;
+  width: 100%;
+  }
+  /* For the border color on hover and focus */
+  .custom-form-control .MuiOutlinedInput-root {
+  transition: border-color 0.3s ease;
+  }
+  
+  .custom-form-control .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #7b235b !important; /* Hover border color */
+  }
+  
+  .custom-form-control .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #7b235b !important; /* Focus border color */
+  }
+  
+  /* For the label color when the input is focused */
+  .custom-form-control .MuiInputLabel-root.Mui-focused {
+  color: #7b235b !important; /* Focus label color */
+  }
+  

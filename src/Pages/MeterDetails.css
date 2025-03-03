@@ -1,0 +1,296 @@
+/* General Container Styling */
+
+
+
+.meter-detail {
+  gap: 20px;
+  /* font-family: Arial, sans-serif; */
+}
+.meter-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left:280px;
+  /* background-color: #f4f4f4; */
+  font-family: Arial, sans-serif;
+}
+
+/* Meter Details Styling */
+.meter-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.meter-container h1,.header h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #723b72;
+
+}
+
+
+
+.status-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.status-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label .icon {
+  font-size: 16px;
+  color: #666;
+}
+
+.label span {
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  font-size: 14px;
+  color: #4CAF50;
+}
+
+.status.good {
+  color: #4CAF50;
+}
+
+.status.connected {
+  color: #2196F3;
+}
+
+/* Customer Information Styling */
+.customer-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row .label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-row .icon {
+  font-size: 16px;
+  color: #666;
+}
+
+.info-row span {
+  font-size: 14px;
+  color: #555;
+}
+
+.readings-container {
+  background: white;
+  padding: 18px;
+ 
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.readings-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 6px;
+}
+
+.reading-box {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.reading-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.reading-label .icon {
+  font-size: px;
+}
+
+.icon.blue {
+  color: #007bff;
+}
+
+.icon.red {
+  color: red;
+}
+
+.icon.orange {
+  color: orange;
+}
+
+.icon.green {
+  color: green;
+}
+
+/* strong {
+  display: block;
+  font-size: 22px;
+  margin-top: 5px;
+} */
+/* Header styling */
+
+
+/* Date picker container */
+.date-picker {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  align-items: center;
+  width:125px;
+  margin-left: 100px;
+}
+
+
+/* Date picker dropdown styling */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Selected date styling */
+.react-datepicker__day--selected {
+  background-color:#7b235b ; /* Purple background for selected date */
+  color: #fff;
+ 
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: #a92c7b !important;
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+/* Hover effect for dates */
+.react-datepicker__day:hover {
+   /* Light purple hover effect */
+  border-radius: 50%;
+}
+
+/* Header of the date picker (month and year) */
+.react-datepicker__header {
+  background-color: #f9f9f9;
+ 
+  border-bottom: 1px solid #ccc;
+}
+
+/* Navigation buttons (previous and next) */
+.react-datepicker__navigation {
+  top: -10px;
+ padding-right: 10px;
+  
+}
+
+/* Day names (Mon, Tue, etc.) */
+.react-datepicker__day-name {
+  color: #7b235b; /* Purple color for day names */
+  font-weight: bold;
+}
+
+/* Current month days */
+.react-datepicker__day {
+  color: #333;
+}
+
+/* Days outside the current month */
+.react-datepicker__day--outside-month {
+  color: #ccc;
+ 
+}
+
+
+.graph-container{
+  width: 1200px;
+  margin-left:280px;
+  height: 500px;
+
+}
+
+
+
+.back-button {
+  position: relative;
+}
+
+.back-button .tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 45px;
+  left: 90%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.back-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,138 @@
+
+/* Navbar Styling */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7b235b;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 250px; /* Move navbar to the right after the sidebar */
+    right: 0;
+    z-index: 1000; /* Keep navbar on top of other content */
+    height:50px;
+  }
+  
+  /* Navbar Left Section (Logo or Title) */
+  .navbar-left {
+    flex-grow: 1;
+    color: white;
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Navbar Right Section (Logout Button) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logout {
+    background-color:  rgba(229, 229, 229, 0.6);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .navbar-logout:hover {
+    background-color: #605c5c;
+  }
+  
+  
+  
+  /* Main Content Section */
+  .layout-content {
+    margin-left: 250px; /* Ensure content is not hidden behind the sidebar */
+    margin-top: 50px; /* Adjust content to avoid overlap with the navbar */
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+  }
+  
+  
+  /* notification icon of the navbar*/
+  .notify-Icon {
+    margin-right: 15px;
+    padding: 4px;
+    background-color: white; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    color: #7b235b;
+  
+  }
+  .notify-Icon:hover {
+    background-color: #cfcaca; 
+    border-color: #333;
+  }
+  
+  
+  
+  .navbar-left h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    position: relative; /* Reference for absolute dropdown */
+  }
+  
+  .notify-icon {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.8em;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .notify-icon:hover {
+    color: #ff4081;
+  }
+  
+  
+  
+  
+  
+  /* Notification Dropdown */
+  .notification-dropdown {
+    position: absolute;
+    top: 50px; /* Add some distance between the icon and dropdown */
+    right: 0;
+    width: 400px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 5px; /* Add a small space below the icon */
+  }
+  
+  
+  /* Show the dropdown when state is true */
+  .notification-dropdown.show {
+    display: block;
+  }
+  
+  /* Notification Icon */
+  .notify-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  

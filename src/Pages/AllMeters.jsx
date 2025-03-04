@@ -30,7 +30,7 @@ const AllMeters = () => {
       if (!token) return;
 
       try {
-        const response = await fetch("http://14.195.14.194:8081/data/meter/getAll", {
+        const response = await fetch("/api/data/meter/getAll", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!response.ok) {

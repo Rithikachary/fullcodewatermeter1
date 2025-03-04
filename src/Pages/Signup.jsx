@@ -50,7 +50,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("http://14.195.14.194:8081/auth/user", formData);
+      const response = await axios.post("/api/auth/user", formData);
       setSuccess("Signup successful! You can now log in. Response: ${response.status} - ${response.statusText}");
       setError("");
       console.log("Response Data:", response.data);

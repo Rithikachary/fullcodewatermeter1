@@ -41,7 +41,7 @@ const HierarchyTitle = () => {
     if (!token) return;
 
     try {
-      const response = await fetch("http://14.195.14.194:8081/hierarchy/titles/all", {
+      const response = await fetch("/api/hierarchy/titles/all", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -79,7 +79,7 @@ const HierarchyTitle = () => {
 
       try {
         const response = await fetch(
-          `http://14.195.14.194:8081/hierarchy/data/${parentId}`,
+          `/api/hierarchy/data/${parentId}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -122,7 +122,7 @@ const HierarchyTitle = () => {
         parentTitleId: formData2.parentTitleId || null, // `null` indicates top-level parent
       };
 
-      const response = await fetch("http://14.195.14.194:8081/hierarchy/titles", {
+      const response = await fetch("/api/hierarchy/titles", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,7 +171,7 @@ const HierarchyTitle = () => {
     if (!token) return;
 
     try {
-      const response = await fetch(`http://14.195.14.194:8081/hierarchy/titles/${id}`, {
+      const response = await fetch(`/api/hierarchy/titles/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

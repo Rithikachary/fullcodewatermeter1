@@ -15,7 +15,7 @@ const Login = () => {
     setError(null); // Reset error state
     
     try {
-      const response = await axios.post("http://14.195.14.194:8081/auth/login", credentials, {
+      const response = await axios.post("/api/auth/login", credentials, {
         headers: {
           "Content-Type": "application/json",
         }

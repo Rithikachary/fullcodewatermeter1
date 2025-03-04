@@ -79,7 +79,7 @@ console.log("Extracted meterSrNo:", consumerId);
     if (!token) return;
   
     const formattedDate = selectedDate.toISOString().split("T")[0];
-    const apiUrl = `http://14.195.14.194:8081/data/get/meterSrNo=${meterId}/date=${formattedDate}`;
+    const apiUrl = `/api/data/get/meterSrNo=${meterId}/date=${formattedDate}`;
   
     console.log("API Request URL:", apiUrl);
   
@@ -129,7 +129,7 @@ console.log("Extracted meterSrNo:", consumerId);
     if (!token) return;
     
     // const meterSrNo = "90000002"; // Your meter serial number
-    const apiUrl = `http://14.195.14.194:8081/data/getAll/meterSrNo=${meterId}`;
+    const apiUrl = `/api/data/getAll/meterSrNo=${meterId}`;
   
     try {
       const response = await fetch(apiUrl, {
@@ -236,7 +236,7 @@ console.log("Extracted meterSrNo:", consumerId);
     const token = getAuthToken();
     if (!token) return;
   
-    const apiUrl = `http://14.195.14.194:8081/hierarchy/data/dataId=${consumerId}`;
+    const apiUrl = `/api/hierarchy/data/dataId=${consumerId}`;
   
     try {
       const response = await fetch(apiUrl, {

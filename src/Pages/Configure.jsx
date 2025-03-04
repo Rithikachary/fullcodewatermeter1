@@ -35,7 +35,7 @@ const Configure = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://14.195.14.194:8081/c2dmessages/publish?topic=${topic}&payload=${payload}&qos=${qos}&retain=${retainRequired}`,
+          `/api/c2dmessages/publish?topic=${topic}&payload=${payload}&qos=${qos}&retain=${retainRequired}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ const Configure = () => {
       // Send the request with the correct method (e.g., GET instead of POST)
       const response = await axios({
         method: 'GET',  // Change to GET if the server expects it
-        url: `http://14.195.14.194:8081/c2dmessages/publish?topic=${encodeURIComponent(topic)}&payload=${encodeURIComponent(payload)}&qos=${qos}&retainRequired=${retainRequired}`,
+        url: `/api/c2dmessages/publish?topic=${encodeURIComponent(topic)}&payload=${encodeURIComponent(payload)}&qos=${qos}&retainRequired=${retainRequired}`,
         headers: {
           'Authorization': `Bearer ${token}`,
         },

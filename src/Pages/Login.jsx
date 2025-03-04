@@ -51,7 +51,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post("http://14.195.14.194:8081/auth/login", {
+      const response = await axios.post("/api/auth/login", {
         key: "value",
       }, {
         headers: {

@@ -45,7 +45,7 @@ const Metermap = () => {
       const token = getAuthToken();
       if (!token) return;
       try {
-        const response = await fetch("http://14.195.14.194:8081/hierarchy/titles/all", {
+        const response = await fetch("/api/hierarchy/titles/all", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await response.json();
@@ -60,7 +60,7 @@ const Metermap = () => {
   const fetchHierarchyData = async (hierarchyTitleId, parentId = null) => {
     const token = getAuthToken();
     if (!token) return [];
-    const url = `http://14.195.14.194:8081/hierarchy/data/titleId=${hierarchyTitleId}${
+    const url = `/api/hierarchy/data/titleId=${hierarchyTitleId}${
       parentId ? `/parentId=${parentId}` : ""
     }`;
     try {
@@ -127,7 +127,7 @@ const Metermap = () => {
       setAddress(null);
       const token = getAuthToken();
       if (!token) return;
-      const url = `http://14.195.14.194:8081/data/address/consumerId=${formData.consumerId}`;
+      const url = `/api/data/address/consumerId=${formData.consumerId}`;
       try {
         const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
         if (!response.ok) throw new Error("Address not found");
@@ -145,7 +145,7 @@ const Metermap = () => {
       const token = getAuthToken();
       if (!token) return;
       try {
-        const response = await fetch("http://14.195.14.194:8081/data/meter/unMappedMeters", {
+        const response = await fetch("/api/data/meter/unMappedMeters", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!response.ok) {
@@ -181,7 +181,7 @@ const Metermap = () => {
     };
 
     try {
-      const response = await fetch("http://14.195.14.194:8081/data/meter/consumer/mapping", {
+      const response = await fetch("/api/data/meter/consumer/mapping", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

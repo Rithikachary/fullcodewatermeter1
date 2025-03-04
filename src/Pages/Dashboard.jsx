@@ -40,7 +40,7 @@ const Dashboard = () => {
 
       try {
         const response = await fetch(
-          "http://14.195.14.194:8081/data/dashboard/presentDay/status",
+          "/api/data/dashboard/presentDay/status",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -114,7 +114,7 @@ const Dashboard = () => {
   
       try {
         const response = await fetch(
-          "http://14.195.14.194:8081/data/dashboard/week/status",
+          "/api/data/dashboard/week/status",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

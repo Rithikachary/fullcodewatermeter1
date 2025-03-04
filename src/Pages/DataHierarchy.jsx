@@ -43,7 +43,7 @@ const DataHierarchy = () => {
 
       try {
         const response = await fetch(
-          "http://14.195.14.194:8081/hierarchy/titles/all",
+          "/api/hierarchy/titles/all",
           { headers: { Authorization: `Bearer ${token}` } }
         );
         const data = await response.json();
@@ -61,7 +61,7 @@ const DataHierarchy = () => {
     const token = getAuthToken();
     if (!token) return [];
 
-    const url = `http://14.195.14.194:8081/hierarchy/data/titleId=${hierarchyTitleId}${
+    const url = `/api/hierarchy/data/titleId=${hierarchyTitleId}${
       parentId ? `/parentId=${parentId}` : ""
     }`;
 
@@ -170,7 +170,7 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const response = await fetch("http://14.195.14.194:8081/hierarchy/data", {
+    const response = await fetch("/api/hierarchy/data", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -206,7 +206,7 @@ const fetchTableData = async () => {
   if (!token) return;
 
   try {
-    const response = await fetch(" http://14.195.14.194:8081/hierarchy/data/all ",
+    const response = await fetch("/api/hierarchy/data/all ",
      {
       headers: { Authorization: `Bearer ${token}` },
     });
